@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                div {
+                        height: 200px;
+                        width: 200px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding: 10px;
+                }
+
+                input {
+                        height: 30px;
+                        width: 300px;
+                        border: 2px solid black;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                }
+
+                h3 {
+                        color: rgb(0, 39, 123);
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <input type="text" id="elec" placeholder=" enter their monthly electricity ">
+                <h3 id="con"></h3>
+
+                <button onclick="electricity()">Calculate tax</button>
+        </div>
+</body>
+<script>
+        function electricity() {
+
+                let electri = document.getElementById("elec").value;
+
+                if (electri >= 0 && electri <= 100) {
+
+                        let cons = electri * 0.10;
+
+                        document.getElementById("con").innerText = "$" + cons;
+                }
+                if (electri > 100 && electri <= 200) {
+
+                        let cons = (100 * 0.1) + (electri - 100) * 0.15;
+
+                        document.getElementById("con").innerText = "$" + cons;
+                }
+                if (electri > 200 && electri <= 300) {
+
+                        let cons = (100 * 0.1) + (100 * 0.15) + (electri - 200) * 0.20;
+
+                        document.getElementById("con").innerText = "$" + cons;
+                }
+                if (electri > 300) {
+
+                        let cons = (100 * 0.1) + (100 * 0.15) + (100 * 0.20) + (electri - 300) * 0.25;
+
+
+                        document.getElementById("con").innerText = "$" + cons;
+                }
+
+        }
+</script>
+
+</html>

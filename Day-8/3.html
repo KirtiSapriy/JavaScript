@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        height: 350px;
+                }
+
+                input {
+                        height: 35px;
+                        width: 300px;
+                        padding: 5px;
+                        border: 1.5px solid black;
+                }
+
+                h2 {
+                        height: 40px;
+                        width: 300px;
+                        border: 1px solid black;
+                        text-align: center;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border: 0;
+                        font-size: 20px;
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+
+                <h1>Chack Triangle</h1>
+
+                <input type="text" placeholder="Enter Triagle First side" name="" id="fs">
+                <input type="text" placeholder="Enter Triagle second side" name="" id="ss">
+                <input type="text" placeholder="Enter Triagle third side" name="" id="ts">
+
+                <h2 id="ans"></h2>
+                <button onclick="triangle()">Check</button>
+
+        </div>
+
+</body>
+
+<script>
+        function triangle() {
+
+                let a = Number(document.getElementById("fs").value);
+                let b = Number(document.getElementById("ss").value);
+                let c = Number(document.getElementById("ts").value);
+
+                if (a + b > c && a + c > b && b + c > a) {
+                        if (a == b && b == c) {
+                                document.getElementById("ans").innerText = " This Triagle is Equilateral"
+                        }
+                        else if (a == b || b == c || c == a) {
+                                document.getElementById("ans").innerText = " This Triagle is Isosceles "
+
+                        }
+                        else {
+                                document.getElementById("ans").innerText = " This Triagle is Scalene"
+
+                        }
+                }
+                if (a < 0 || b < 0 || b < 0) {
+                        document.getElementById("ans").innerText = "Not  a Valid triangle"
+                }
+                else {
+                        document.getElementById("ans").innerText = "Place Enter Value"
+
+                }
+
+        }
+</script>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        height: 400px;
+                }
+
+                input {
+                        height: 35px;
+                        width: 300px;
+                        padding: 5px;
+                        border: 1.5px solid black;
+                }
+
+                h2 {
+                        height: 40px;
+                        width: 300px;
+                        border: 1px solid black;
+                        text-align: center;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border: 0;
+                        font-size: 20px;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div>
+
+                <h1>Chack Your Grad/score</h1>
+
+                <input type="text" name="" placeholder="Enter Your Assignments mark" id="ass">
+                <input type="text" name="" placeholder="Enter Your Midterm mark" id="mid">
+                <input type="text" name="" placeholder="Enter Your Final Exam mark" id="fe">
+
+                <h2 id="fs"></h2>
+                <h2 id="gr"></h2>
+
+                <button onclick="grad()">Check</button>
+
+        </div>
+
+</body>
+
+<script>
+        function grad() {
+
+                let a = document.getElementById("ass").value;
+                let b = document.getElementById("mid").value;
+                let c = document.getElementById("fe").value;
+
+                a = a * 40 / 100;
+                b = b * 30 / 100;
+                c = c * 30 / 100;
+
+                let tot = a + b + c;
+
+                tot.toFixed(2)
+
+
+
+                if (tot >= 90 && tot <= 100) {
+                        document.getElementById("fs").innerText = "Final Weighted Score:" + tot;
+                        document.getElementById("gr").innerText = "Grade: A";
+
+                }
+
+                if (tot >= 80 && tot < 90) {
+                        document.getElementById("fs").innerText = "Final Weighted Score:" + tot;
+                        document.getElementById("gr").innerText = "Grade: B";
+
+                }
+
+                if (tot >= 70 && tot < 80) {
+                        document.getElementById("fs").innerText = "Final Weighted Score:" + tot;
+                        document.getElementById("gr").innerText = "Grade: C";
+
+                }
+
+                if (tot >= 60 && tot < 70) {
+                        document.getElementById("fs").innerText = "Final Weighted Score:" + tot;
+                        document.getElementById("gr").innerText = "Grade: D";
+
+                }
+                if (tot >= 50 && tot <= 0) {
+                        document.getElementById("fs").innerText = "Final Weighted Score:" + tot;
+                        document.getElementById("gr").innerText = "Grade: F";
+
+                }
+
+
+
+        }
+</script>
+
+</html>

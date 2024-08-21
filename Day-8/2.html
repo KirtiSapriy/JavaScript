@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        height: 300px;
+                }
+
+                input {
+                        height: 35px;
+                        width: 300px;
+                        padding: 10px;
+                        border: 1.5px solid black;
+                }
+
+                h2 {
+                        height: 40px;
+                        width: 300px;
+                        border: 1px solid black;
+                        padding: 5px;
+                        text-align: center;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border: 0;
+                        font-size: 20px;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div>
+
+                <h1>Chack Your Bonus</h1>
+
+                <input type="text" name="" id="year" placeholder="Enter year">
+                <input type="text" name="" id="sal" placeholder="Enter Your Salary">
+
+                <h2 id="bon"></h2>
+
+                <button onclick="bonus()">Check</button>
+
+        </div>
+
+</body>
+
+<script>
+        function bonus() {
+
+                let a = Number(document.getElementById("year").value);
+                let b = Number(document.getElementById("sal").value);
+
+
+
+                if (a > 0 && a <= 2) {
+                        document.getElementById("bon").innerText = "No Bonus";
+
+                }
+
+                else if (a >= 3 && a <= 5) {
+
+                        let bon = b * 10 / 100;
+                        document.getElementById("bon").innerText = "Your Bonus is " + bon;
+
+
+                }
+
+                else if (a > 5 && a <= 10) {
+                        let bon = b * 20 / 100;
+                        document.getElementById("bon").innerText = "Your Bonus is " + bon;
+
+                }
+
+                else if (a > 10) {
+                        let bon = b * 30 / 100;
+                        document.getElementById("bon").innerText = "Your Bonus is " + bon;
+                }
+                else {
+                        document.getElementById("bon").innerText = "Enter value ";
+
+                }
+
+
+
+
+        }
+</script>
+
+</html>

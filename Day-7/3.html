@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                div {
+                        height: 200px;
+                        width: 200px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding: 10px;
+                }
+
+                input {
+                        height: 30px;
+                        width: 300px;
+                        border: 2px solid black;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 190px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                }
+
+                h3 {
+                        color: rgb(0, 39, 123);
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <input type="text" id="age" placeholder=" Enter Your age">
+                <h3 id="a"></h3>
+
+                <button onclick="age()">Check Age categorize</button>
+        </div>
+</body>
+<script>
+        function age() {
+
+                let age = document.getElementById("age").value;
+
+                if (age >= 0 && age < 1) {
+                        document.getElementById("a").innerText = "Infant";
+                }
+                if (age >= 1 && age <= 12) {
+                        document.getElementById("a").innerText = "Child";
+                }
+                if (age >= 13 && age <= 19) {
+                        document.getElementById("a").innerText = "Teenager";
+                }
+                if (age >= 20 && age <= 64) {
+                        document.getElementById("a").innerText = "Adult";
+                }
+                if (age > 64) {
+                        document.getElementById("a").innerText = "Senior Citizen";
+
+                }
+
+        }
+</script>
+
+</html>

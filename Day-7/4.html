@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                div {
+                        height: 200px;
+                        width: 200px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding: 10px;
+                }
+
+                input {
+                        height: 30px;
+                        width: 300px;
+                        border: 2px solid black;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 190px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                }
+
+                h3 {
+                        color: rgb(0, 39, 123);
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <input type="text" id="year" placeholder=" Enter Year">
+                <h3 id="y"></h3>
+
+                <button onclick="year()">Check Age categorize</button>
+        </div>
+</body>
+<script>
+        function year() {
+
+                let year = document.getElementById("year").value;
+
+
+                if (year < 0) {
+                        document.getElementById("y").innerText = "Ancient";
+                }
+                if (year >= 1 && year <= 1500) {
+                        document.getElementById("y").innerText = "Medieval";
+                }
+                if (year > 1500 && year <= 2024) {
+                        document.getElementById("y").innerText = "Modern";
+                }
+                if (year > 2024) {
+                        document.getElementById("y").innerText = "Future";
+                }
+
+        }
+</script>
+
+</html>

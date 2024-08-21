@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        height: 200px;
+                }
+
+                input {
+                        height: 35px;
+                        width: 300px;
+                        padding: 10px;
+                        border: 1.5px solid black;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border: 0;
+                        font-size: 20px;
+                }
+        </style>
+</head>
+
+<body>
+
+        <div>
+                <input type="text" placeholder="Enter password" name="" id="pas">
+                <button onclick="pas()">Chack</button>
+        </div>
+
+</body>
+
+<script>
+        function pas() {
+                let oldpas = "12345";
+
+                let newpas = document.getElementById("pas").value
+
+                if (oldpas == newpas) {
+                        alert("Password same");
+                }
+                else {
+                        alert("Password is chang");
+
+                }
+        }
+</script>
+
+</html>

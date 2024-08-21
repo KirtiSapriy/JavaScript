@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                div {
+                        height: 200px;
+                        width: 200px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding: 10px;
+                }
+
+                input {
+                        height: 30px;
+                        width: 300px;
+                        border: 2px solid black;
+                        padding: 5px;
+                }
+
+                button {
+                        height: 40px;
+                        width: 150px;
+                        background-color: black;
+                        color: white;
+                        border-radius: 20px;
+                        border: none;
+                }
+                h3{
+                        color: rgb(0, 39, 123);
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <input type="text" id="inc" placeholder="Enter Your income">
+                <h3 id="tax"></h3>
+
+                <button onclick="incom()">Calculate tax</button>
+        </div>
+</body>
+<script>
+        function incom() {
+
+                let i = document.getElementById("inc").value;
+
+                if (i >= 0 && i <= 10000) {
+                        i = i * 5 / 100;
+
+                        document.getElementById("tax").innerText = i;
+                }
+                if (i > 10000 && i <= 50000) {
+
+                        i = i * 10 / 100;
+
+                        document.getElementById("tax").innerText = i;
+                }
+                if (i > 50000 && i <= 100000) {
+
+                        i = i * 15 / 100;
+
+                        document.getElementById("tax").innerText = i;
+                }
+                if (i > 100000) {
+
+                        i = i * 20 / 100;
+
+
+
+                        document.getElementById("tax").innerText = i.toFixed(2);
+                }
+
+        }
+</script>
+
+</html>
