@@ -7,7 +7,7 @@ let a = ""
 butoon.forEach((el) => {
 
         el.addEventListener("click", () => {
-                if (el.value != "=" && el.value != "C") {
+                if (el.value != "=" && el.value != "C" && el.value != "X") {
 
                         a += el.value;
                         asn.value = a
@@ -22,6 +22,7 @@ butoon.forEach((el) => {
                         asn.value = ""
 
                 }
+
         })
 })
 
