@@ -24,7 +24,7 @@ document.querySelector("form").addEventListener("submit", (form) => {
         }
         else if (username.length < 6) {
                 document.querySelector("#Ns").innerText = "Not Valid Name Lenght";
-                document.querySelector("#Nm").style.border = "2px solid red"    
+                document.querySelector("#Nm").style.border = "2px solid red"
                 valid = false
         }
 
