@@ -1,0 +1,23 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+#a1,
+#drop,
+#me {
+        visibility: hidden;
+}
+
+#title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+}
+
+::-webkit-scrollbar {
+        display: none;
+}
+

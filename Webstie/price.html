@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart with Total Price</title>
+</head>
+<body>
+    <table id="cart-table"></table>
+    
+    <!-- Section to show the total price -->
+    <h3>Total Price: $<span id="total-price">0</span></h3>
+
+    <script>
+        // Sample data for demonstration
+        const data = [
+            { Image: 'https://via.placeholder.com/100', Title: 'Item 1', Price: 100 },
+            { Image: 'https://via.placeholder.com/100', Title: 'Item 2', Price: 150 },
+            { Image: 'https://via.placeholder.com/100', Title: 'Item 3', Price: 200 }
+        ];
+
+        let totalPrice = 0;
+
+        // Function to generate table rows
+        function renderCart() {
+            const cartTable = document.getElementById('cart-table');
+            cartTable.innerHTML = data.map((el, i) => {
+                return `
+                    <tr id="row-${i}">
+                        <td><img src="${el.Image}" width="100px"></td>
+                        <td>${el.Title}</td>
+                        <td class="price">${el.Price}</td>
+                        <td>
+                            <button id="dis-${i}" onclick="decrease(${el.Price}, ${i})">-</button>
+                            <input type="number" id="in-${i}" value="1" readonly>
+                            <button id="add-${i}" onclick="add(${el.Price}, ${i})">+</button>
+                        </td>
+                    </tr>
+                `;
+            }).join("");
+
+            updateTotalPrice();  // Initialize total price
+        }
+
+        // Function to update the total price
+        function updateTotalPrice() {
+            document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+        }
+
+        // Function to add quantity and update total price
+        function add(price, index) {
+            const inputElement = document.getElementById(`in-${index}`);
+            inputElement.value = parseInt(inputElement.value) + 1;
+
+            // Update total price
+            totalPrice += price;
+            updateTotalPrice();
+        }
+
+        // Function to decrease quantity and update total price
+        function decrease(price, index) {
+            const inputElement = document.getElementById(`in-${index}`);
+
+            if (inputElement.value > 1) {
+                inputElement.value = parseInt(inputElement.value) - 1;
+
+                // Update total price
+                totalPrice -= price;
+                updateTotalPrice();
+            }
+        }
+
+        // Initialize the cart
+        renderCart();
+    </script>
+</body>
+</html>
