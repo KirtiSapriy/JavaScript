@@ -6,27 +6,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://cdn.tailwindcss.com"></script>
-
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
-<body>
-<!--         
-        <div>
-                <h2>Looks like you're new here!</h2>
-                <h4>Sign up with your mobile number to get started</h4>
-                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="">
-        </div> -->
+<body class="bg-[#f1f2f4]">
+          <header id="header2"
+                class=" lg:h-16 bg-[#2874f0] text-white w-full flex items-center justify-evenly  p-3 sm:justify-between">
 
-        <form action="" id="form" class="flex flex-col border-4 w-9/12">
-                <input type="email" placeholder="Enter Email" class="border-2 m-3" id="em">
-                <input type="password" placeholder="Enter PassWord" class="border-2 m-3" id="pas">
-                <!-- <p>By continuing, you agree to Flipkart's <span>Terms of Use</span> and <span>Privacy Policy.</span></p> -->
-                <button class="border-2 m-3">submit</button>
-                <a href="login.html">Existing User? Log in</a>
-        </form>
+
+        </header>
+
+
+
+        <section class="flex w-full h-[32rem] my-5">
+                <div class="w-8/12 flex  bg-white my-2 mx-auto shadow">
+                        <div class="sm:hidden w-[25rem] lg:inline  bg-[#2874f0]">
+                                <div class=" flex flex-col h-full w-full  justify-between items-center ">
+                                        <div class="w-full  p-7   h-52 ">
+                                                <h2 class="text-white text-[25px] font-bold">Looks like you're new here!
+                                                </h2>
+                                                <h4 class="my-3 text-[#dbdbdb]">Sign up with your mobile number to get
+                                                        started
+                                                </h4>
+                                        </div>
+                                        <div class="h-40 w-full flex items-center justify-evenly">
+                                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"
+                                                        alt="" class="">
+                                        </div>
+                                </div>
+                        </div>
+                        <form action="" id="form" class=" w-9/12 p-5">
+                                <div class="flex flex-col  h-full items-center p-4 ">
+                                        <input type="email" placeholder="Enter Email"
+                                                class="shadow sm:w-full lg:w-11/12  my-3  px-2 py-1" id="em">
+                                        <input type="password" placeholder="Enter PassWord"
+                                                class="shadow  sm:w-full lg:w-11/12 my-3  px-2 py-1" id="pas">
+                                        <p class="text-[#717478] text-[12px] my-3">By continuing, you agree to Flipkart's <span class="text-[#2874f0]">Terms of Use</span> and
+                                                <span class="text-[#2874f0]">Privacy
+                                                        Policy.</span>
+                                        </p>
+                                        <button class="sm:w-full lg:w-11/12 h-10 text-white text-md font-bold bg-[#fb641b] my-3">CONTINU</button>
+                                        <a href="login.html" class="lg:w-11/12 h-10  text-center my-3 shadow-md text-[#2874f0] font-bold">Existing User? Log in</a>
+                                </div>
+                        </form>
+                </div>
+        </section>
+       <footer id="footer" class="bg-[#212121] text-white  pt-5 relative border-2  "></footer>
 
 </body>
+<script src="header&footer.js"></script>
 <script src="sign up.js"></script>
 
 </html>

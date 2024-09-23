@@ -7,28 +7,170 @@
         <title>Document</title>
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-                #title {
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                }
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-        <header></header>
-        <section class="flex items-center justify-evenly">
-                <aside class="w-2/12 border-1"></aside>
-                <div id="body" class="w-9/12 border-2 flex flex-wrap items-center justify-evenly">
+<body class="bg-[#f1f2f4]">
+        <div class="w-full">
+                <header id="header2"
+                        class="fixed top-0 z-40 lg:h-16 bg-[#2874f0] text-white w-full flex items-center justify-evenly  p-3 sm:justify-between">
+
+
+                </header>
+
+                <section class="flex items-center justify-evenly relative mt-1 h-[155rem]  border-2 ">
+                <aside
+                        class="w-[18rem] sm:hidden lg:inline p-3 sm:static lg:absolute fixed top-16 mt-2 left-3 bg-white   overflow-scroll">
+                        <div class="w-full  py-4">
+                                <div id="head" class="">
+                                        <h3 class="m-2 text-xl font-medium">Filters</h3>
+                                        <div class="w-full py-3 px-2 border ">
+                                                <p class="text-[14px] font-[550] mt-1">CATEGORIES</p>
+                                                <p class="text-[#717478] pl-3 mt-1">Wearable Smart Devices</p>
+                                                <p class="text-[14px] font-[550] pl-4 mt-1">Smart Watches</p>
+                                        </div>
+                                        <div class="p-2">
+                                                <h3 class="font-bold">PRICE</h3>
+                                                <input type="range" class="range:border-green-500" min="1000"
+                                                        max="10000" value="5000" id="reng">
+                                                <h4 class="flex">Price ₹ <p id="value" class="ml-1">
+                                                        </p>
+                                                </h4>
+                                        </div>
+                                        <div class="flex items-center p-3 mt-2">
+                                                <input type="checkbox" class="h-4 w-4 mr-2">
+                                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                                                        class="h-5 w-20" alt="">
+
+                                        </div>
+                                        <div class="flex p-2 border flex-col">
+                                                <h4 class="font-bold">Customer Ratings</h4>
+                                                <div class="flex text-sm   p-2 items-center">
+                                                        <input type="checkbox" class="mx-2"><span>4 <i
+                                                                        class="fa fa-star"></i> &
+                                                                above
+                                                        </span>
+                                                </div>
+
+                                                <div class="flex text-sm   p-2 items-center">
+                                                        <input type="checkbox" class="mx-2"><span>3 <i
+                                                                        class="fa fa-star"></i> &
+                                                                above
+                                                        </span>
+                                                </div>
+
+                                                <div class="flex text-sm   p-2 items-center">
+                                                        <input type="checkbox" class="mx-2"><span>2 <i
+                                                                        class="fa fa-star"></i> &
+                                                                above
+                                                        </span>
+                                                </div>
+
+                                                <div class="flex text-sm  p-2 items-center">
+                                                        <input type="checkbox" class="mx-2"><span>1 <i
+                                                                        class="fa fa-star"></i> &
+                                                                above
+                                                        </span>
+                                                </div>
+
+
+                                        </div>
+                                        <div class="flex flex-col justify-evenly p-4">
+                                                <ul>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span>
+                                                                                Offers</span> </a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span>
+                                                                                Discount</span></a> <i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span>Gear
+                                                                        </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#">
+                                                                        <span>Battery
+                                                                                Type </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> Ideal
+                                                                                for</span> </a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> Tire
+                                                                                Size
+                                                                        </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> GST
+                                                                                Invoice
+                                                                                Available </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> Frame
+                                                                                Size
+                                                                        </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> New
+                                                                                Arrivals </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span> Rear
+                                                                                Brake
+                                                                        </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span>
+                                                                                Suspension
+                                                                        </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+                                                        <li class="flex items-center justify-between my-3">
+                                                                <a href="#"><span>
+                                                                                Availability </span></a><i
+                                                                        class="fa fa-angle-down text-[#717478]"></i>
+                                                        </li>
+
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </aside>
+                <div id="body"
+                        class="lg:w-9/12 sm:w-full sm:static lg:absolute top-16 mt-2 right-3 bg-white flex flex-wrap items-center justify-evenly ">
 
 
                 </div>
-        </section>
 
+                </section>
+
+                <footer id="footer" class="bg-[#212121] text-white  pt-5 relative border-2  ">
+                </footer>
+
+
+
+        </div>
 
 </body>
 <script src="product.js"></script>
+<script src="header&footer.js"></script>
 
 </html>

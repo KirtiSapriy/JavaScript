@@ -64,3 +64,25 @@ document.getElementById("form").addEventListener("submit", (a) => {
 
 
 })
+
+function visible() {
+        document.getElementById("a1").style.visibility = "visible";
+        document.getElementById("a").style.visibility = "hidden";
+        document.getElementById("drop").style.visibility = "visible";
+
+
+}
+function vis() {
+        document.getElementById("a").style.visibility = "visible";
+        document.getElementById("a1").style.visibility = "hidden";
+        document.getElementById("drop").style.visibility = "hidden";
+
+}
+
+function visi() {
+        document.getElementById("me").style.visibility = "visible";
+}
+
+function invi() {
+        document.getElementById("me").style.visibility = "hidden";
+}
