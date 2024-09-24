@@ -4,6 +4,11 @@
       "id": "2f64",
       "email": "kirti1@gmail.com",
       "Password": "1234"
+    },
+    {
+      "id": "e728",
+      "email": "kirti@gmail.com",
+      "Password": "12345"
     }
   ],
   "Product-data": [
@@ -266,9 +271,27 @@
       "Title": "boAt Airdopes 161/163 with ASAP Charge & 40 HRS Playback Bluetooth  (Pebble Black, Active Black, True Wireless)",
       "Price": "256",
       "Quntity": "12"
+    },
+    {
+      "id": "1cf9",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=70",
+      "Title": "boAt Airdopes 161/163 with ASAP Charge & 40 HRS Playback Bluetooth  (Pebble Black, Active Black, True Wireless)",
+      "Price": "999",
+      "Quntity": "12"
     }
   ],
   "cart": [
+    {
+      "id": "1",
+      "Image": "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/w/2/f/50-546-pfb78-android-ios-pebble-yes-original-imah36yehnbrgwqg.jpeg?q=70&crop=false",
+      "Title": "Noise Colorfit Icon 2 1.8'' Display with Bluetooth Calling, AI Voice Assistant Smartwatch  (Black Strap, Regular)",
+      "Price": "1399",
+      "Quntity": "",
+      "rant": {
+        "renting": "4.0",
+        "count": "13"
+      }
+    },
     {
       "id": "1",
       "Image": "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/w/2/f/50-546-pfb78-android-ios-pebble-yes-original-imah36yehnbrgwqg.jpeg?q=70&crop=false",
