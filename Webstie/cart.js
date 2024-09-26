@@ -69,7 +69,7 @@ function add(price, i) {
         if (id >= 0) {
                 id++;
                 document.getElementById(`in-${i}`).value = id;
-                totleprice += (price * id)
+                totleprice += price
                 tprice()
 
 
@@ -77,7 +77,7 @@ function add(price, i) {
         else {
                 id = 0;
                 document.getElementById(`in-${i}`).value = id;
-                totleprice += (price * id)
+                totleprice += price 
                 tprice()
 
 
@@ -95,7 +95,7 @@ function dis(price, i) {
                 id--;
                 document.getElementById(`in-${i}`).value = id;
 
-                totleprice -= (price * id)
+                totleprice -= price *
                 tprice()
 
 
@@ -104,7 +104,7 @@ function dis(price, i) {
         else {
                 id = 1;
                 document.getElementById(`in-${i}`).value = id;
-                totleprice -= (price * id)
+                totleprice -= price  
                 tprice()
 
 

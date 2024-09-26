@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+        <div class="w-7/12 m-auto h-96 mt-10 flex flex-col justify-evenly">
+                <h1 class="text-2xl font-bold text-center mt-4">Weather Application</h1>
+                <div class="w-7/12  h-14 flex items-center justify-evenly m-auto mt-5">
+                        <input type="search" class="border-2 rounded-lg border-blue-800 h-8 w-9/12 px-3"
+                                placeholder="Enter City Name">
+                        <button
+                                class="p-1 w-20 border-2 border-blue-800 hover:bg-blue-800 hover:text-white">Search</button>
+                </div>
+                <div id="weather" class=" hover:shadow-2xl h-60 flex items-center justify-evenly w-8/12 p-3 m-auto">
+                        <div class=" h-full w-7/12 m-auto flex  flex-col justify-evenly ">
+                                <h2 id="city" class="text-xl capitalize"></h2>
+                                <p id="temp" class="text-xl capitalize"></p>
+                                <h2 id="dis" class="text-xl capitalize"></h2>
+                        </div>
+                        <div id="icon" class=" w-4/12 flex items-center justify-evenly h-40"></div>
+
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
