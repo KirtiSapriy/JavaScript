@@ -22,7 +22,7 @@ function weather(city) {
                 .then((res) => {
                         document.getElementById("city").innerHTML = ` <span class="text-lg text-blue-800 mr-2 font-bold">City :</span> ${res.name}`
 
-                        document.getElementById("temp").innerHTML = ` <span class="text-lg text-blue-800 mr-2 font-bold">Temperature :</span> ${res.main.temp}`
+                        document.getElementById("temp").innerHTML = ` <span class="text-lg text-blue-800 mr-2 font-bold">Temperature :</span> ${res.main.temp} °C`
                         document.getElementById("dis").innerHTML = `  <span class="text-lg text-blue-800 mr-2 font-bold">Weather:</span> ${res.weather[0].description}`
                         document.getElementById("icon").innerHTML = `<img src="https://openweathermap.org/img/wn/${res.weather[0].icon}.png" class="h-10/12 w-10/12" / >`
 
@@ -30,6 +30,6 @@ function weather(city) {
                 .catch(er => console.log(er))
 
 
-}KO
+}
 
-weather("dehli")KO
+weather(`dehli`)
