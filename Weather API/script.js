@@ -20,11 +20,18 @@ function weather(city) {
 
                 .then(res => res.json())
                 .then((res) => {
-                        document.getElementById("city").innerHTML = ` <span class="text-lg text-blue-800 mr-2 font-bold">City :</span> ${res.name}`
+                        console.log(res);
 
-                        document.getElementById("temp").innerHTML = ` <span class="text-lg text-blue-800 mr-2 font-bold">Temperature :</span> ${res.main.temp} °C`
-                        document.getElementById("dis").innerHTML = `  <span class="text-lg text-blue-800 mr-2 font-bold">Weather:</span> ${res.weather[0].description}`
-                        document.getElementById("icon").innerHTML = `<img src="https://openweathermap.org/img/wn/${res.weather[0].icon}.png" class="h-10/12 w-10/12" / >`
+
+                        let a = res.main.temp.toFixed(0)
+                        let ws = (res.wind.speed * 3.6).toFixed(0)
+                        document.getElementById("icon").innerHTML = `<img src="https://openweathermap.org/img/wn/${res.weather[0].icon}.png" class="h-10/12 w-10/12 " / >`
+                        document.getElementById("city").innerText = `  ${res.name}`
+
+                        document.getElementById("temp").innerText = ` ${a}°C`
+                        document.getElementById("ws").innerText = `  ${ws} km/h`
+                        document.getElementById("hm").innerHTML = `  ${res.main.humidity} %  `
+
 
                 })
                 .catch(er => console.log(er))
