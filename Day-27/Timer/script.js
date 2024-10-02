@@ -53,6 +53,7 @@ reset.addEventListener("click", () => {
         Minute = `01`;
         Second = `00`;
         Houer = `00`;
+        dispaly.innerHTML = `${Houer} : ${Minute} : ${Second}  `;
 
         clearInterval(setTime)
 
