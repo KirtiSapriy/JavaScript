@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- start apply css -->
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+
+
+                }
+
+                #lh {
+                        line-height: 50px;
+                }
+        </style>
+        <!-- end apply css -->
+
+
+        <!-- cdn tailwindcss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+        <div id="main" class="border h-[36.5rem]">
+                <header class="border h-14 px-3">
+                        <a href="product.html" id="lh">Product</a>
+                </header>
+                <section class="w-full m-auto  flex  items-center justify-around py-5 px-3  ">
+                        <form class="w-5/12   flex flex-col items-center justify-evenly p-3  h-[29rem] " id="form">
+                                <div class="w-10/12 h-full  flex flex-col items-center justify-evenly px-5 border ">
+                                        <h1 class=" self-start text-xl font-bold "> Data Add Form</h1>
+                                        <input class="border-2 w-full h-9 px-3 rounded-md " id="img" type="text"
+                                                placeholder="Enter Product">
+                                        <input class="border-2 w-full h-9 px-3 rounded-md " id="title" type="text"
+                                                placeholder="Enter Title">
+                                        <input class="border-2 w-full h-9 px-3 rounded-md " id="price" type="text"
+                                                placeholder="Enter Price">
+                                        <input class="border-2 w-full h-9 px-3 rounded-md " id="rant" type="text"
+                                                placeholder="Enter Ranting">
+                                        <input class="border-2 w-full h-9 px-3 rounded-md " id="dis" type="text"
+                                                placeholder="Enter Discription">
+
+                                        <button id="a" class="border-2 p-2 w-5/12 self-start">Submit</button>
+                                        <a href="" class="hidden">Add</a>
+                                </div>
+                        </form>
+                       
+                </section>
+        </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

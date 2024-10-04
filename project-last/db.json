@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "Img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/s/s/w/-original-imah34qdujndwk47.jpeg?q=70",
+      "Title": "headphones",
+      "Price": "699",
+      "Ranting": "4.4",
+      "Discription": "Mivi DuoPods i6 TWS, Engineered for Athletes, IPX 4.0,13mm Bass,55+H Playtime Bluetooth  (Black, True Wireless)"
+    },
+    {
+      "id": "2",
+      "Img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/v/f/m/-original-imagz5z4cknamu9d.jpeg?q=70",
+      "Title": "earphone",
+      "Price": "999",
+      "Ranting": "4.1",
+      "Discription": "boAt Airdopes Supreme w/ 4 Mics AI ENx Tech, 50 HRS Playback,Multi Point Connectivity Bluetooth  (Classic Black, True Wireless)"
+    },
+    {
+      "id": "3",
+      "Img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/v/f/m/-original-imagz5z4cknamu9d.jpeg?q=70",
+      "Title": "earphone",
+      "Price": "999",
+      "Ranting": "4.1",
+      "Discription": "boAt Airdopes Supreme w/ 4 Mics AI ENx Tech, 50 HRS Playback,Multi Point Connectivity Bluetooth  (Classic Black, True Wireless)"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "Img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/s/s/w/-original-imah34qdujndwk47.jpeg?q=70",
+      "Title": "headphones",
+      "Price": "699",
+      "Ranting": "4.4",
+      "Discription": "Mivi DuoPods i6 TWS, Engineered for Athletes, IPX 4.0,13mm Bass,55+H Playtime Bluetooth  (Black, True Wireless)"
+    }
+  ]
+}
