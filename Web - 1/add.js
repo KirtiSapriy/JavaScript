@@ -9,6 +9,7 @@ document.getElementById("form").addEventListener("submit", (form) => {
         let img = document.getElementById("Pi").value;
         let title = document.getElementById("Pt").value;
         let price = document.getElementById("Pp").value;
+        let category = document.getElementById("Pc").value;
         let quntity = document.getElementById("Pq").value;
 
 
@@ -33,7 +34,13 @@ document.getElementById("form").addEventListener("submit", (form) => {
         else {
                 document.getElementById("Pp").style.border = "2px solid "
         }
-
+        if (category == "") {
+                document.getElementById("pc").style.border = "2px solid red"
+                res = false
+        }
+        else {
+                document.getElementById("Pc").style.border = "2px solid "
+        }
         if (quntity == "") {
                 document.getElementById("Pq").style.border = "2px solid red"
                 res = false
@@ -48,8 +55,8 @@ document.getElementById("form").addEventListener("submit", (form) => {
                         Image: img,
                         Title: title,
                         Price: price,
+                        Category: category,
                         Quntity: quntity
-
                 }
 
 

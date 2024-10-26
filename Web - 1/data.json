@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": "f0e7",
+      "email": "kirti1@gmail.com",
+      "Password": "1234"
+    }
+  ],
+  "Product-data": [
+    {
+      "id": "1",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=70",
+      "Title": "truke Airbuds Lite with Quad Mic ENC, 48Hrs Battery, Gaming Mode,Made in India, 5.1v Bluetooth  (Black, True Wireless)",
+      "Price": "599",
+      "rant": {
+        "ranting": "4.5",
+        "count": "123"
+      },
+      "Category": "Audio & Video ",
+      "Quntity": "20"
+    },
+    {
+      "id": "f58c",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=70",
+      "Title": "Osjs SOFT TOYS LOVER teddy bear size 3 feet - 90.2 cm  (Pink)",
+      "Price": "256",
+      "Category": "Audio & Video ",
+      "Quntity": "20"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=70",
+      "Title": "truke Airbuds Lite with Quad Mic ENC, 48Hrs Battery, Gaming Mode,Made in India, 5.1v Bluetooth  (Black, True Wireless)",
+      "Price": "599",
+      "rant": {
+        "ranting": "4.5",
+        "count": "123"
+      },
+      "Category": "Audio & Video ",
+      "Quntity": "20"
+    },
+    {
+      "id": "1",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=70",
+      "Title": "truke Airbuds Lite with Quad Mic ENC, 48Hrs Battery, Gaming Mode,Made in India, 5.1v Bluetooth  (Black, True Wireless)",
+      "Price": "599",
+      "rant": {
+        "ranting": "4.5",
+        "count": "123"
+      },
+      "Category": "Audio & Video ",
+      "Quntity": "20"
+    },
+    {
+      "id": "1",
+      "Image": "https://rukminim2.flixcart.com/image/612/612/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=70",
+      "Title": "truke Airbuds Lite with Quad Mic ENC, 48Hrs Battery, Gaming Mode,Made in India, 5.1v Bluetooth  (Black, True Wireless)",
+      "Price": "599",
+      "rant": {
+        "ranting": "4.5",
+        "count": "123"
+      },
+      "Category": "Audio & Video ",
+      "Quntity": "20"
+    }
+  ],
+  "wish": []
+}

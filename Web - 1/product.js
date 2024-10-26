@@ -18,13 +18,13 @@ function add(data) {
                 
                 <div id="box" class=" sm:w-full p-2 my-2 sm:h-auto lg:h-[29rem] lg:w-[15rem]  hover:shadow-lg  transition ease-in-out delay-150">
                                 <div id="img" class="h-[17rem]  relative p-3 flex items-center justify-center ">
-                                <i class="fa fa-heart absolute right-4 top-2 text-[#d2d2d3]"></i>                
+                                <a onclick="hr()"><i class="fa fa-heart absolute right-4 top-2 text-[#d2d2d3]" id="heart"></i>  </a>              
                                                         <img src="${el.Image}" class="h-full w-auto " alt="">
                                 </div>
                                 <div id="info" class="h-[11rem]  flex flex-col justify-evenly p-2">
                                 
                                         <h3 id="title" class="mt-3">${el.Title}</h3>
-                                        <h2 class=" mt-3"><span class="text-[14px]  bg-green-700 mx-1 text-center p-0.5 text-white rounded-sm">  ${el.rant.renting} <i class="fa fa-star text-[13px]"></i>  </span>
+                                        <h2 class=" mt-3"><span class="text-[14px]  bg-green-700 mx-1 text-center p-0.5 text-white rounded-sm">  ${el.rant.ranting} <i class="fa fa-star text-[13px]"></i>  </span>
                                         <span class="text-[#717478]">(${el.rant.count})<span>
                                         </h2>
                                         
@@ -40,6 +40,27 @@ function add(data) {
 
 }
 
+
+function changeColor() {
+        const box = document.getElementById('box');
+        box.style.backgroundColor = 'green';
+
+        localStorage.setItem('boxColor', 'green');
+}
+
+function resetColor() {
+        const box = document.getElementById('box');
+        box.style.backgroundColor = 'blue'; // Reset to default
+
+        localStorage.removeItem('boxColor');
+}
+
+window.onload = function () {
+        const savedColor = localStorage.getItem('boxColor');
+        if (savedColor) {
+                document.getElementById('box').style.backgroundColor = savedColor;
+        }
+};
 function cart(i) {
         fetch(`http://localhost:3000/Product-data/${i}`)
                 .then(res => res.json())

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Persistent CSS Change</title>
+        <style>
+                .box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: blue;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="box" id="box"></div>
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="resetColor()">Reset Color</button>
+
+        <script>
+                // Function to change the color and save it in local storage
+                function changeColor() {
+                        const box = document.getElementById('box');
+                        box.style.backgroundColor = 'green'; // Change the color
+
+                        // Save the current color in local storage
+                        localStorage.setItem('boxColor', 'green');
+                }
+
+                // Function to reset the color to default
+                function resetColor() {
+                        const box = document.getElementById('box');
+                        box.style.backgroundColor = 'blue'; // Reset to default
+
+                        // Remove the saved color from local storage
+                        localStorage.removeItem('boxColor');
+                }
+
+                // On page load, check local storage for saved color and apply it
+                window.onload = function () {
+                        const savedColor = localStorage.getItem('boxColor');
+                        if (savedColor) {
+                                document.getElementById('box').style.backgroundColor = savedColor;
+                        }
+                };
+        </script>
+</body>
+
+</html>

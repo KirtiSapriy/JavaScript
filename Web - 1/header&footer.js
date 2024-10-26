@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 document.querySelector("#header2").innerHTML = `
  <div id="logo" class="lg:w-3/12  h-full flex items-end pr-8 justify-evenly flex-col  sm:w-4/12"><img
                                 src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
@@ -103,7 +96,7 @@ document.querySelector("#header2").innerHTML = `
                 </div>`
 
 
-                document.querySelector("#footer").innerHTML = `<div class="">
+document.querySelector("#footer").innerHTML = `<div class="">
                 <div class=" flex flex-wrap items-start  justify-evenly">
                         <div class=" w-28 p-2 flex text-[14px] flex-col  ">
                                 <div class=" text-[#717478]">ABOUT</div>

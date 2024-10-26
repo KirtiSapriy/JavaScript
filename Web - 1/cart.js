@@ -19,6 +19,8 @@ function cart(data) {
         document.getElementById("it").innerHTML = `(${data.length} Items)`
 
         return data.map((el, i) => {
+
+                totleprice += +el.Price;
                 return `
 
                 <tr id="row-${i}" class="">
@@ -41,7 +43,7 @@ function cart(data) {
                 <tr class="h-14   ">
                         <td class="flex items-center jutify-evenly h-14  w-40 ">
                         <button id="dis${i}" class=" border w-10 h-7" onclick="dis(${el.Price},${i})">-</button>
-                        <input type="number" id="in-${i}" value="0" class="w-20 h-7 px-3 border">
+                        <input type="number" id="in-${i}" value="1" class="w-20 h-7 px-3 border">
                         <button onclick="add(${el.Price}, ${i})" class=" w-10 h-7 border" id="add-${i}">+</button>
                         </td>
                         <td><a href="" class="font-bold ">SAVE FOR  LETER</a>
@@ -50,15 +52,19 @@ function cart(data) {
                         </td>
                 </tr>
                 `
+
+
         }).join("")
 
 }
 
 
 function tprice() {
-        document.getElementById("tp").innerText = totleprice;
+
+        document.getElementById("tp").innerText = ` ₹ ${totleprice}`;
 
 }
+
 
 function add(price, i) {
 
@@ -77,7 +83,7 @@ function add(price, i) {
         else {
                 id = 0;
                 document.getElementById(`in-${i}`).value = id;
-                totleprice += price 
+                totleprice += price
                 tprice()
 
 
@@ -95,7 +101,7 @@ function dis(price, i) {
                 id--;
                 document.getElementById(`in-${i}`).value = id;
 
-                totleprice -= price *
+                totleprice -= price
                 tprice()
 
 
@@ -104,9 +110,8 @@ function dis(price, i) {
         else {
                 id = 1;
                 document.getElementById(`in-${i}`).value = id;
-                totleprice -= price  
+                totleprice -= price
                 tprice()
-
 
 
         }

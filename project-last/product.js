@@ -18,7 +18,7 @@ function view(d) {
                 <div class=" w-full h-32 px-2">
                         <p class="capitalize text-lg">${el.Title}</p>
                         <p>₹ ${el.Price}</p>
-                        <p class="text-xs p-2 text-white "><span class="p-1 rounded-md bg-green-700 "> <span><i class="fa fa-star"></i></span> <span>${el.Ranting}</span></span></p>
+                        <p class="text-xs p-2 text-white "><span class="p-1 rounded-md bg-green-700 "> <span><i class="fa fa-star"></i></span> <span>${el.Rating}</span></span></p>
 
                         <button class=" p-2 rounded-lg     w-10/12 m-auto bg-green-700 text-white my-2" onclick="add(${el.id})">Add To Cart</button>
                 </div>
@@ -28,8 +28,8 @@ function view(d) {
 
 function add(id) {
 
-        console.log(id);        
-        
+        console.log(id);
+
         fetch(`http://localhost:3000/data/${id}`)
                 .then(res => res.json())
                 .then((res) => {
@@ -39,7 +39,7 @@ function add(id) {
                                 method: "POST",
                                 headers: {
 
-                                        "ContaintType": "appliction/json"
+                                        "Contain-tType": "appliction/json"
                                 },
                                 body: JSON.stringify(res)
                         })

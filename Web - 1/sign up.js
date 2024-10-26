@@ -35,6 +35,7 @@ document.getElementById("form").addEventListener("submit", (a) => {
                         .then((res) => {
                                 if (res.length > 0) {
                                         alert("Email Already Exited")
+                                        window.location.href = "index.html"
                                 }
                                 else {
                                         data(obj)
@@ -55,6 +56,8 @@ document.getElementById("form").addEventListener("submit", (a) => {
 
                 document.getElementById("em").value = ""
                 document.getElementById("pas").value = ""
+
+                window.location.href = "login.html"
 
 
 

@@ -1,0 +1,8 @@
+1. Explain call(), apply() and, bind() methods.
+2. What is currying in JavaScript?
+3. What is recursion in a programming language?
+4. What is the use of a constructor function in javascript?
+5. What is the distinction between client-side and server-side JavaScript?
+6. resjor pay
+
+boat

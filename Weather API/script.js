@@ -33,6 +33,12 @@ function weather(city) {
                         document.getElementById("hm").innerHTML = `  ${res.main.humidity} %  `
 
 
+
+
+
+
+
+                        
                 })
                 .catch(er => console.log(er))
 
